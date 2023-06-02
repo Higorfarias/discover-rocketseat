@@ -60,6 +60,23 @@ ul li a{
     justify-content: center;
     padding: 16px 24px;
     align-items: center;
+
     background: rgba(255, 255, 255, 0.1);
-    
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: background 0.3s; /* transição de 0,3 segundos na propriedade background */
+
+}
+
+/* pseudo-selector */
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid white;
 }
